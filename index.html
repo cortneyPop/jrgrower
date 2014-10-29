@@ -15,7 +15,6 @@
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="styles/bootstrap/js/bootstrap.min.js"></script>
-
 </head>
 <body>
 <!--[if lt IE 10]>
@@ -24,15 +23,23 @@
 
 
 <!-- GLOBAL NAV -->
-<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
-    
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
-</nav>
 <div class="container">
-    <div id="showRightPush" class="pull-right menu-btn"><span class="glyphicon glyphicon-align-justify"></span></div>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">JR Growers</a>
+            </div>
+            <div class="">
+                <ul class="nav-ul navbar-right">
+                    <li><a class="link-nav" href="#">about</a></li>
+                    <li><a class="link-nav" href="#">contact</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
 </div>
+
 
 <!-- MAIN CONTENT -->
 <div class="container-full main-wrapper">
@@ -44,6 +51,5 @@
 
 
 </body>
-<script src="js/classie.js"></script>
 <script src="js/main.js"></script>
 </html>
