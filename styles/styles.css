@@ -1,8 +1,35 @@
+/* GLOBAL PAGE FADE IN
+ ------------- */
+.fade-in {
+    animation: fadein 3s;
+    -moz-animation: fadein 3s; /* Firefox */
+    -webkit-animation: fadein 3s; /* Safari and Chrome */
+    -o-animation: fadein 3s; /* Opera */
+}
+@keyframes fadein {
+    from { opacity:0;}
+    to { opacity:1;}
+}
+@-moz-keyframes fadein { /* Firefox */
+    from { opacity:0;}
+    to { opacity:1;}
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from { opacity:0;}
+    to {opacity:1;}
+}
+@-o-keyframes fadein { /* Opera */
+    from {opacity:0;}
+    to {opacity: 1;}
+}
+
+/* MAIN STYLES
+ ------------- */
 
 html{
-    background:url('../images/plant2.jpg') no-repeat center center;
+    background:url('../images/plant4.jpg') no-repeat center center;
     min-height:100%;
-    background-size:cover;
+    background-size: cover;
 }
 
 body{
@@ -10,6 +37,7 @@ body{
     padding-top: 70px;
     min-height:100%;
     background: transparent;
+    font-family: 'Quicksand', sans-serif;
 }
 
 h1, h2 {
@@ -17,45 +45,107 @@ h1, h2 {
 }
 
 h1 {
-    font-family: 'Quicksand', sans-serif;
     font-size: 5em;
-    font-weight: 400;
+    font-weight: 200;
     letter-spacing: -4px;
 }
 
 h2 {
-    font-family: 'Fira Sans', sans-serif;
     font-weight: 200;
     font-size: 2em;
 }
 
-.main-content {
-    text-align: right;
-    margin: 20% 12% 0 0;
+a {
+    color: #fff;
+}
+
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* COLORS
+ ------------- */
+.white {
+    color: #fff;
+}
+
+.green {
+    color: #27301c;
 }
 
 
 /* GLOBAL NAV MENU
  ------------- */
+ .navbar-default .navbar-brand {
+    color: #fff;
+ }
+
+ .navbar-default .navbar-brand:hover {
+    color: #fff;
+ }
+
  .navbar-default {
     background-color: transparent;
     border: none;
  }
 
  .navbar-brand {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 5em;
-    font-weight: 400;
+    font-size: 3em;
+    font-weight: 200;
     letter-spacing: -4px;
  }
 
  .nav-ul {
     list-style: none;
+    text-align: left;
  }
 
 .link-nav {
     color: #fff;
-    font-size: 3em;
-    font-family: 'Fira Sans', sans-serif;
+    font-size: 2.3em;
     font-weight: 200;
+    transition: color 0.5s ease;
+}
+
+.link-nav.smaller {
+    font-size: 1.7em;
+}
+
+.link-nav:hover, .link-nav.current {
+    color: #27301c;
+    text-decoration: none;
+}
+
+
+/* POSITIONING
+ ------------- */
+
+.content-wrap {
+    margin-top: 5%;
+}
+
+.top-space {
+    margin-top: 7%;
+}
+
+
+/* ABOUT PAGE
+ ------------- */
+.learn-more-link {
+    margin-top: 50%;
+}
+
+#section2 {
+
+}
+
+.section2 {
+    background: #fff;
+    height: 1000px;
+    text-align: center;
+}
+
+.three-block {
+    margin: 5% auto 5% auto;
 }
